@@ -1,28 +1,28 @@
-# Zerafet Restaurant
+# Zerafet Restaurant Website
 
-Modern bir restoran/kafe için hazırlanmış responsive referans web sitesi. Proje; ana sayfa, menü, hakkımızda ve iletişim sayfalarından oluşur. HTML, CSS ve vanilla JavaScript ile geliştirilmiştir.
+A responsive restaurant website built with plain HTML, CSS, and JavaScript. This public reference project is designed for a modern fine dining restaurant with a homepage, menu, about page, contact page, reservation-focused layout, and WhatsApp shortcut.
 
 ## Repository
 
 [GitHub repository](https://github.com/tastanegemen/Zerafet-Restaurant)
 
-## Ekran Görüntüsü
+## Preview
 
-![Zerafet website preview](screenshot.png)
+![Zerafet website preview](preview.png)
 
-## Özellikler
+## Features
 
-- Masaüstü, tablet ve mobil ekranlara uyumlu responsive tasarım
-- Restoran atmosferini öne çıkaran büyük hero alanı
-- Öne çıkan yemekler, marka hikayesi ve mekan bölümleri
-- `data/menu.json` üzerinden beslenen dinamik menü sayfası
-- Lokal dosya önizlemesi için JavaScript fallback menü verisi
-- Sabit WhatsApp rezervasyon butonu
-- Çerez bildirimi
-- Rezervasyon odaklı iletişim sayfası ve harita alanı
-- Hakkımızda sayfası, şef bölümü ve restoran değerleri
+- Fully responsive layout for desktop, tablet, and mobile screens
+- Large restaurant hero section with atmospheric food imagery
+- Homepage sections for featured dishes, brand story, and interior preview
+- Dynamic menu page powered by `data/menu.json`
+- JavaScript fallback menu data for direct local file previews
+- Fixed WhatsApp reservation shortcut
+- Cookie notice
+- Contact page with reservation form layout and map embed
+- About page with restaurant story, chef section, and values
 
-## Proje Yapısı
+## Project Structure
 
 ```text
 .
@@ -30,7 +30,7 @@ Modern bir restoran/kafe için hazırlanmış responsive referans web sitesi. Pr
 |-- contact.html
 |-- index.html
 |-- menu.html
-|-- screenshot.png
+|-- preview.png
 |-- css/
 |   `-- style.css
 |-- data/
@@ -42,18 +42,18 @@ Modern bir restoran/kafe için hazırlanmış responsive referans web sitesi. Pr
     `-- menu.js
 ```
 
-## Teknolojiler
+## Tech Stack
 
 - HTML5
 - CSS3
 - Vanilla JavaScript
 - Google Fonts
 
-Herhangi bir build adımı veya paket yöneticisi gerekmez.
+No build step or package manager is required.
 
-## Lokal Çalıştırma
+## Running Locally
 
-Menü verisi JSON dosyasından yüklendiği için lokal server ile çalıştırılması önerilir.
+Because the menu data is loaded from a JSON file, using a local server is recommended.
 
 ```bash
 python -m http.server 4175
@@ -65,39 +65,39 @@ Then open:
 http://127.0.0.1:4175/index.html
 ```
 
-Sayfalar doğrudan dosya olarak da açılabilir. Bu durumda menü sayfası `js/menu.js` içindeki fallback veriyi kullanır.
+The pages can also be opened directly from the filesystem. In that case, the menu page uses the embedded fallback data from `js/menu.js`.
 
-## Sayfalar
+## Main Pages
 
-- `index.html` - Ana sayfa
-- `menu.html` - Dinamik restoran menüsü
-- `about.html` - Restoran hikayesi ve şef profili
-- `contact.html` - Rezervasyon ve iletişim sayfası
+- `index.html` - Homepage
+- `menu.html` - Dynamic restaurant menu
+- `about.html` - Restaurant story and chef profile
+- `contact.html` - Reservation/contact page
 
-## Özelleştirme
+## Customization
 
-Menü öğeleri şu dosyadan düzenlenebilir:
+Menu items can be edited in:
 
 ```text
 data/menu.json
 ```
 
-Site doğrudan `file://` ile de önizlenecekse `js/menu.js` içindeki fallback menü verisini JSON dosyasıyla senkron tutun.
+If the site needs to support direct `file://` preview, keep the fallback menu data in `js/menu.js` in sync with the JSON file.
 
-WhatsApp rezervasyon linki şu dosyada tanımlıdır:
+The WhatsApp reservation link is defined in:
 
 ```text
 js/main.js
 ```
 
-`wa.me` URL'sini bulup telefon numarası ve mesaj metnini kendi rezervasyon bilgilerinizle değiştirebilirsiniz.
+Look for the `wa.me` URL and replace the phone number/message with your own reservation contact details.
 
-Ana renkler, tipografi, boşluklar ve responsive kurallar şu dosyada yer alır:
+Main colors, typography, spacing, and responsive rules are defined in:
 
 ```text
 css/style.css
 ```
 
-## Notlar
+## Notes
 
-Bu proje statik bir frontend referans sitesidir. Form gönderimi, rezervasyon yönetimi, CMS düzenleme ve online ödeme akışları varsayılan olarak bir backend'e bağlı değildir.
+This is a static frontend reference website. Form submission, booking management, CMS editing, and online payment flows are not connected to a backend by default.

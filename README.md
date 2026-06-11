@@ -1,28 +1,28 @@
-# Zerafet Restaurant Website
+# Zerafet Restaurant
 
-A responsive restaurant website template built with plain HTML, CSS, and JavaScript. The project is designed for a modern fine dining restaurant with a menu page, reservation-focused contact flow, mobile navigation, cookie notice, and WhatsApp reservation shortcut.
+Modern bir restoran/kafe için hazırlanmış responsive referans web sitesi. Proje; ana sayfa, menü, hakkımızda ve iletişim sayfalarından oluşur. HTML, CSS ve vanilla JavaScript ile geliştirilmiştir.
 
-## Live Preview
+## Repository
 
-[View the live website](https://demo.egementastan.com/Restoran-Kafe/website5-html/)
+[GitHub repository](https://github.com/tastanegemen/Zerafet-Restaurant)
 
-## Preview
+## Ekran Görüntüsü
 
 ![Zerafet website preview](screenshot.png)
 
-## Features
+## Özellikler
 
-- Fully responsive layout for desktop, tablet, and mobile screens
-- Homepage with hero section, featured dishes, brand story, and interior preview
-- Dynamic menu page powered by `data/menu.json`
-- Fallback menu data in JavaScript for local file preview support
-- Mobile-friendly menu item images
-- Fixed WhatsApp reservation button
-- Cookie consent banner
-- Contact page with reservation form layout and map embed
-- About page with restaurant story, chef section, and values
+- Masaüstü, tablet ve mobil ekranlara uyumlu responsive tasarım
+- Restoran atmosferini öne çıkaran büyük hero alanı
+- Öne çıkan yemekler, marka hikayesi ve mekan bölümleri
+- `data/menu.json` üzerinden beslenen dinamik menü sayfası
+- Lokal dosya önizlemesi için JavaScript fallback menü verisi
+- Sabit WhatsApp rezervasyon butonu
+- Çerez bildirimi
+- Rezervasyon odaklı iletişim sayfası ve harita alanı
+- Hakkımızda sayfası, şef bölümü ve restoran değerleri
 
-## Project Structure
+## Proje Yapısı
 
 ```text
 .
@@ -42,18 +42,18 @@ A responsive restaurant website template built with plain HTML, CSS, and JavaScr
     `-- menu.js
 ```
 
-## Tech Stack
+## Teknolojiler
 
 - HTML5
 - CSS3
 - Vanilla JavaScript
 - Google Fonts
 
-No build step or package manager is required.
+Herhangi bir build adımı veya paket yöneticisi gerekmez.
 
-## Running Locally
+## Lokal Çalıştırma
 
-Because the menu data is loaded from a JSON file, using a local server is recommended.
+Menü verisi JSON dosyasından yüklendiği için lokal server ile çalıştırılması önerilir.
 
 ```bash
 python -m http.server 4175
@@ -65,39 +65,39 @@ Then open:
 http://127.0.0.1:4175/index.html
 ```
 
-The pages can also be opened directly from the filesystem. In that case, the menu page uses the embedded fallback data from `js/menu.js`.
+Sayfalar doğrudan dosya olarak da açılabilir. Bu durumda menü sayfası `js/menu.js` içindeki fallback veriyi kullanır.
 
-## Main Pages
+## Sayfalar
 
-- `index.html` - Homepage
-- `menu.html` - Dynamic restaurant menu
-- `about.html` - Restaurant story and chef profile
-- `contact.html` - Reservation/contact page
+- `index.html` - Ana sayfa
+- `menu.html` - Dinamik restoran menüsü
+- `about.html` - Restoran hikayesi ve şef profili
+- `contact.html` - Rezervasyon ve iletişim sayfası
 
-## Customization
+## Özelleştirme
 
-Menu items can be edited in:
+Menü öğeleri şu dosyadan düzenlenebilir:
 
 ```text
 data/menu.json
 ```
 
-If the site needs to support direct `file://` preview, keep the fallback menu data in `js/menu.js` in sync with the JSON file.
+Site doğrudan `file://` ile de önizlenecekse `js/menu.js` içindeki fallback menü verisini JSON dosyasıyla senkron tutun.
 
-The WhatsApp reservation link is defined in:
+WhatsApp rezervasyon linki şu dosyada tanımlıdır:
 
 ```text
 js/main.js
 ```
 
-Look for the `wa.me` URL and replace the phone number/message with your own reservation contact details.
+`wa.me` URL'sini bulup telefon numarası ve mesaj metnini kendi rezervasyon bilgilerinizle değiştirebilirsiniz.
 
-Main colors, typography, spacing, and responsive rules are defined in:
+Ana renkler, tipografi, boşluklar ve responsive kurallar şu dosyada yer alır:
 
 ```text
 css/style.css
 ```
 
-## Notes
+## Notlar
 
-This is a static frontend template. Form submission, booking management, CMS editing, and online payment flows are not connected to a backend by default.
+Bu proje statik bir frontend referans sitesidir. Form gönderimi, rezervasyon yönetimi, CMS düzenleme ve online ödeme akışları varsayılan olarak bir backend'e bağlı değildir.

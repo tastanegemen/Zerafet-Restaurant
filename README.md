@@ -6,6 +6,10 @@ A responsive restaurant website built with plain HTML, CSS, and JavaScript. This
 
 [GitHub repository](https://github.com/tastanegemen/Zerafet-Restaurant)
 
+## Live Preview
+
+[View the live website](https://demo.egementastan.com/Restoran-Kafe/website5-html/)
+
 ## Preview
 
 ![Zerafet website preview](preview.png)

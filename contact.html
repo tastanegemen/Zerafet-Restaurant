@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zerafet ile iletişime geçin. Rezervasyon, sorularınız ve özel etkinlikler için bize ulaşın.">
+  <title>İletişim | ZERAFET</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽</text></svg>">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">Zerafet</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="menu.html">Menü</a></li>
+      <li><a href="about.html">Hakkımızda</a></li>
+      <li><a href="contact.html">İletişim</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menü">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- CONTACT HERO -->
+  <section class="menu-hero">
+    <div class="hero-bg" style="background-image: url('images/contact.jpg');"></div>
+    <div class="menu-hero-content hero-content">
+      <div class="hero-subtitle">Bize Ulaşın</div>
+      <h1 class="hero-title">İletişim</h1>
+      <div class="hero-divider"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT CONTENT -->
+  <section class="section">
+    <div class="contact-grid">
+      <div class="fade-in">
+        <div class="section-label" style="text-align: left; margin-bottom: 2rem;">Rezervasyon</div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Ad Soyad</label>
+            <input type="text" id="name" name="name" placeholder="Adınız ve soyadınız" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-posta</label>
+            <input type="email" id="email" name="email" placeholder="ornek@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" placeholder="+90 5XX XXX XX XX">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Tarih</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="time">Saat</label>
+              <select id="time" name="time" required>
+                <option value="">Seçiniz</option>
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+                <option value="21:00">21:00</option>
+                <option value="21:30">21:30</option>
+                <option value="22:00">22:00</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="guests">Misafir Sayısı</label>
+            <select id="guests" name="guests" required>
+              <option value="">Seçiniz</option>
+              <option value="1">1 Kişi</option>
+              <option value="2">2 Kişi</option>
+              <option value="3">3 Kişi</option>
+              <option value="4">4 Kişi</option>
+              <option value="5">5 Kişi</option>
+              <option value="6">6 Kişi</option>
+              <option value="7+">7+ Kişi (Özel alan)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Notlar</label>
+            <textarea id="message" name="message" placeholder="Özel istekler, alerjiler, kutlama notu..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Rezervasyon Yap</button>
+        </form>
+      </div>
+
+      <div class="contact-info fade-in" style="transition-delay: 0.2s;">
+        <div class="section-label" style="text-align: left; margin-bottom: 2rem;">Bilgiler</div>
+        <div class="contact-info-item">
+          <h4>Adres</h4>
+          <p>İstiklal Cad. No: 87/A<br>Beyoğlu, İstanbul 34430</p>
+        </div>
+        <div class="contact-info-item">
+          <h4>Telefon</h4>
+          <p><a href="tel:+902125551234" style="color: var(--cream-dark);">+90 212 555 12 34</a></p>
+        </div>
+        <div class="contact-info-item">
+          <h4>E-posta</h4>
+          <p><a href="mailto:info@zerafet.com" style="color: var(--cream-dark);">info@zerafet.com</a></p>
+        </div>
+        <div class="contact-info-item">
+          <h4>Çalışma Saatleri</h4>
+          <p>
+            Pazartesi – Cumartesi: 18:00 – 00:00<br>
+            Pazar: Kapalı
+          </p>
+        </div>
+        <div class="contact-info-item">
+          <h4>Dress Code</h4>
+          <p>Smart casual ve üzeri. Şort, terlik ve spor kıyafet kabul edilmemektedir.</p>
+        </div>
+
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.123456789!2d28.9784!3d41.0342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAyJzAzLjEiTiAyOMKwNTgnNDIuMiJF!5e0!3m2!1str!2str!4v1234567890"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Zerafet</a>
+        <p>Modern Türk mutfağının en seçkin lezzetlerini keşfedin. Her tabak, bir sanat eseri.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Sayfalar</h4>
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="menu.html">Menü</a></li>
+          <li><a href="about.html">Hakkımızda</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>İletişim</h4>
+        <ul>
+          <li><a href="tel:+902125551234">+90 212 555 12 34</a></li>
+          <li><a href="mailto:info@zerafet.com">info@zerafet.com</a></li>
+          <li><a href="#">Beyoğlu, İstanbul</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="TripAdvisor">TA</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Zerafet. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <!-- COOKIE CONSENT -->
+  <div class="cookie-consent">
+    <p>Bu site deneyiminizi iyileştirmek için çerezler kullanır. Sitemizi kullanmaya devam ederek <a href="#">çerez politikamızı</a> kabul etmiş olursunuz.</p>
+    <button class="cookie-btn">Kabul Et</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
